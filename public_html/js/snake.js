@@ -4,8 +4,11 @@ var context;
 var screenWidth;
 var screenHeight;
 
+gameInitialize();
+gameDraw();
+
 function gameInitialize() {
-    var canvas = document.getElementsById("game-screen");
+    var canvas = document.getElementById("game-screen");
     context = canvas.getContext("2d");
     
     screenWidth = window.innerWidth;
