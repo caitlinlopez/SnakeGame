@@ -11,6 +11,7 @@ snakeInitialize();
 gameDraw();
 snakeDraw();
 snakeUpdate();
+snakeDraw();
 
 function gameInitialize() {
     var canvas = document.getElementById("game-screen");
