@@ -8,7 +8,7 @@ var screenHeight;
 
 gameInitialize();
 snakeInitialize();
-gameLoop();
+setInterval(gameLoop);
 
 function gameInitialize() {
     var canvas = document.getElementById("game-screen");
