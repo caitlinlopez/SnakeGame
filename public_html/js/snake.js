@@ -98,6 +98,7 @@ function foodInitialize() {
         x: 0,
         y: 0
     };
+    setFoodPosition();
 }
 
 function foodDraw() {
@@ -108,4 +109,7 @@ function foodDraw() {
 function setFoodPosition() {
     var randomX = Math.floor(Math.random() * (screenWidth));
     var randomY = Math.floor(Math.random() * (screenHeight));
+    
+    food.x = randomX;
+    food.y = randomY;
 }
