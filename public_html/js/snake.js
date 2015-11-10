@@ -61,7 +61,7 @@ function snakeInitialize() {
     snake = [];
     snakeLength = 5;
     snakeSize = 20;
-    snakeDirection = "down";
+    snakeDirection = "right";
     
     for(var index = snakeLength - 1; index >= 0; index--) {
         snake.push( {
@@ -84,6 +84,9 @@ function snakeUpdate() {
     
     if(snakeDirection == "down") {
         snakeHeadY++;
+    }
+    else {
+        snakeHeadX++;
     }
     
     var snakeTail = snake.pop();
