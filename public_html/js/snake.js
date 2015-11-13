@@ -87,9 +87,12 @@ function snakeUpdate() {
     if(snakeDirection == "down") {
         snakeHeadY++;
     }
+    
     else if(snakeDirection == "right"){
         snakeHeadX++;
     }
+    
+    checkFoodCollisions();
     
     var snakeTail = snake.pop();
     snakeTail.x = snakeHeadX;
@@ -136,5 +139,16 @@ function keyboardHandler(event) {
     }
     else if(event.keyCode == "40" && snakeDirection != "up") {
         snakeDirection = "down";
+    }
+}
+
+/*--------------------------------------------------------
+ * Collision Handling
+ * -------------------------------------------------------
+ */
+
+function checkFoodCollisions() {
+    if(snakeHeadX == food.x && snakeHeadY == food.y) {
+        console.log("Food Collision")
     }
 }
