@@ -184,7 +184,7 @@ function setState(state) {
 }
 
 function displayMenu(menu) {
-    menu.style.visiblity = "visible";
+    menu.style.visibility = "visible";
 }
 
 function showMenu(state) {
