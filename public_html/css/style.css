@@ -7,12 +7,12 @@ body {
     display: block;
 }
 
-#gameOver {
+#gameOver, #playMUD {
     position: absolute;
     visibility: hidden;
 }
 
-h1, h3 {
+h1, h2, h3 {
     font-family: 'VT323' ;
     text-align: center;
 }
