@@ -17,6 +17,7 @@ var screenHeight;
 var gameState;
 var gameOverMenu;
 var restartButton;
+var playMUD;
 
 /*----------------------------------------------------------
  * Executing Game Code
@@ -50,6 +51,8 @@ function gameInitialize() {
     
     restartButton = document.getElementById("restartButton");
     restartButton.addEventListener("click", gameRestart);
+    
+    playMUD = document.getElementById("playMUD");
     
     setState("PLAY");
 }
@@ -221,6 +224,9 @@ function hideMenu(menu) {
 function showMenu(state) {
     if(state == "GAME OVER") {
         displayMenu(gameOverMenu);
+    }
+    else if(state == "PLAY") {
+        displayMenu(playMUD);
     }
 }
 
