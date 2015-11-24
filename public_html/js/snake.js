@@ -116,6 +116,14 @@ function snakeUpdate() {
         snakeHeadX++;
     }
     
+    if(snakeDirection == "up") {
+        snakeHeadY--;
+    }
+    
+    else if(snakeDirection == "left"){
+        snakeHeadX--;
+    }
+    
     checkFoodCollisions(snakeHeadX, snakeHeadY);
     checkWallCollisions(snakeHeadX, snakeHeadY);
     checkSnakeCollisions(snakeHeadX, snakeHeadY);
@@ -166,6 +174,13 @@ function keyboardHandler(event) {
     else if(event.keyCode == "40" && snakeDirection != "up") {
         snakeDirection = "down";
     }
+    
+    if(event.keyCode == "37" && snakeDirection != "right") {
+        snakeDirection = "left";
+    }
+    else if(event.keyCode == "38" && snakeDirection != "down") {
+        snakeDirection = "up";
+    }
 }
 
 /*--------------------------------------------------------
@@ -180,6 +195,8 @@ function checkFoodCollisions(snakeHeadX, snakeHeadY) {
             y: 0
         });
         snakeLength++;
+        foodDraw();
+        setFoodPosition();
     }
 }
 
