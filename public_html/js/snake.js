@@ -207,6 +207,10 @@ function checkWallCollisions(snakeHeadX, snakeHeadY) {
     if(snakeHeadX * snakeSize >= screenWidth  || snakeHeadX * snakeSize < 0) {
         setState("GAME OVER");
     }
+    
+    if(snakeHeadY * snakeSize >= screenHeight  || snakeHeadY * snakeSize < 0) {
+        setState("GAME OVER");
+    }
 }
 
 function checkSnakeCollisions(snakeHeadX, snakeHeadY) {
