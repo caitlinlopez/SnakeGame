@@ -12,7 +12,7 @@ body {
     visibility: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
     font-family: 'VT323' ;
     text-align: center;
 }
@@ -21,11 +21,13 @@ h1, h2, h3 {
     font-size: 62px;
     margin-bottom: 0px;
     margin-top: 0px;
+    color: #aaaaaa;
 }
 
 #restartButton {
-    border: 2px solid black;
+    border: 2px solid #aaaaaa;
     border-radius: 10px;
+    color: #aaaaaa;
 }
 
 #restartButton:hover {
@@ -34,4 +36,46 @@ h1, h2, h3 {
 
 #scoreboard {
     margin: 0px;
+    color: #aaaaaa;
+}
+
+#gameStart {
+    position: absolute;
+}
+
+#start {
+    font-size: 62px;
+    margin-left: 800px; 
+    margin-top: 100px;
+    color: #aaaaaa;
+}
+
+.play {
+    border: 2px solid #aaaaaa;
+    border-radius: 10px;
+    margin-left: 800px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.play:hover {
+     background-color: white;
+}
+
+.playy {
+    border: 2px solid #aaaaaa;
+    border-radius: 10px;
+    margin-left: 800px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.playy:hover {
+     background-color: white;
 }
