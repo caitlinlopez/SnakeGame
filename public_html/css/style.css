@@ -21,13 +21,13 @@ h1, h2, h3, a {
     font-size: 62px;
     margin-bottom: 0px;
     margin-top: 0px;
-    color: #aaaaaa;
+    color: white;
 }
 
 #restartButton {
-    border: 2px solid #aaaaaa;
+    border: 2px solid white;
     border-radius: 10px;
-    color: #aaaaaa;
+    color: white;
 }
 
 #restartButton:hover {
@@ -36,7 +36,7 @@ h1, h2, h3, a {
 
 #scoreboard {
     margin: 0px;
-    color: #aaaaaa;
+    color: white;
 }
 
 #gameStart {
@@ -47,35 +47,50 @@ h1, h2, h3, a {
     font-size: 62px;
     margin-left: 800px; 
     margin-top: 100px;
-    color: #aaaaaa;
+    color: white;
 }
 
 .play {
-    border: 2px solid #aaaaaa;
+    border: 2px solid white;
     border-radius: 10px;
     margin-left: 800px;
     font-size: 25px;
     padding-left: 40px;
     padding-right: 40px;
-    color: #aaaaaa;
+    color: white;
     text-decoration: none;
 }
 
 .play:hover {
-     background-color: white;
+     background-color: #AEC6CF;
 }
 
 .playy {
-    border: 2px solid #aaaaaa;
+    border: 2px solid white;
     border-radius: 10px;
     margin-left: 800px;
     font-size: 25px;
     padding-left: 30px;
     padding-right: 30px;
-    color: #aaaaaa;
+    color: white;
     text-decoration: none;
 }
 
 .playy:hover {
-     background-color: white;
+     background-color: #B39EB5;
+}
+
+.playyy {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 800px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.playyy:hover {
+     background-color: #FFD1DC;
 }

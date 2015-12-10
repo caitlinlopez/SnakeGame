@@ -70,7 +70,7 @@ function gameLoop() {
 }
 
 function gameDraw() {
-    context.fillStyle = "rgb(234,211,248)";
+    context.fillStyle = "rgb(179,158,181)";
     context.fillRect(0, 0, screenWidth, screenHeight);
 }
 
