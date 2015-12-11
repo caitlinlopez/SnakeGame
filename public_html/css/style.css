@@ -7,7 +7,7 @@ body {
     display: block;
 }
 
-#gameOver, #playMUD {
+#gameOver, #playMUD{
     position: absolute;
     visibility: hidden;
 }
