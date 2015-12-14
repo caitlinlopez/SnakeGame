@@ -19,6 +19,8 @@ var gameOverMenu;
 var restartButton;
 var playMUD;
 var scoreboard;
+var sound;
+var gameoversound;
 
 /*----------------------------------------------------------
  * Executing Game Code
@@ -55,6 +57,12 @@ function gameInitialize() {
     
     playMUD = document.getElementById("playMUD");
     scoreboard = document.getElementById("scoreboard");
+    
+    sound = new Audio("sounds/food.mp3");
+    sound.preload = "auto";
+    
+    gameoversound = new Audio("sounds/gameover.mp3");
+    gameoversound.preload = "auto";
     
     setState("PLAY");
 }
@@ -201,6 +209,8 @@ function checkFoodCollisions(snakeHeadX, snakeHeadY) {
         snakeLength++;
         foodDraw();
         setFoodPosition();
+        
+        sound.play();
     }
 }
 
@@ -249,6 +259,7 @@ function hideMenu(menu) {
 function showMenu(state) {
     if(state == "GAME OVER") {
         displayMenu(gameOverMenu);
+        gameoversound.play();
     }
     else if(state == "PLAY") {
         displayMenu(playMUD);
