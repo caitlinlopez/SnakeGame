@@ -20,7 +20,6 @@ var restartButton;
 var playMUD;
 var scoreboard;
 var sound;
-var gameoversound;
 
 /*----------------------------------------------------------
  * Executing Game Code
@@ -30,7 +29,7 @@ var gameoversound;
 gameInitialize();
 snakeInitialize();
 foodInitialize();
-setInterval(gameLoop, 1000/25);
+setInterval(gameLoop, 1000/30);
 
 /*----------------------------------------------------------
  * Game Functions
@@ -259,7 +258,6 @@ function hideMenu(menu) {
 function showMenu(state) {
     if(state == "GAME OVER") {
         displayMenu(gameOverMenu);
-        gameoversound.play();
     }
     else if(state == "PLAY") {
         displayMenu(playMUD);

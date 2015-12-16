@@ -20,7 +20,6 @@ var restartButton;
 var playMUD;
 var scoreboard;
 var sound;
-var gameoversound;
 
 /*----------------------------------------------------------
  * Executing Game Code
@@ -259,7 +258,6 @@ function hideMenu(menu) {
 function showMenu(state) {
     if(state == "GAME OVER") {
         displayMenu(gameOverMenu);
-        gameoversound.play();
     }
     else if(state == "PLAY") {
         displayMenu(playMUD);
